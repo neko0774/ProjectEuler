@@ -1,10 +1,11 @@
 #!/bin/sh
 
 read input
-mkdir $input
-if [-e {$input}]; then
-    echo "directory {$input} already exits"
-    fi:
-cp sample/main.cpp !/home/neko/math/{$ipnut}/main.cpp
-cp sample/main.py !/home/neko/math/{$ipnut}/main.py
-cd {$input}
+if [ -e $input ]; then
+    echo "directory $input already exits"
+else
+    mkdir $input
+    touch $input/main.cpp
+    cp sample/main.cpp $input/main.cpp
+    cd $input
+fi
