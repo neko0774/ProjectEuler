@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+nclude <bits/stdc++.h>
 using namespace std;
 using ll = long long;
 int i,j;
