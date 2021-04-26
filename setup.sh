@@ -1,11 +1,10 @@
 #!/bin/sh
 
-read input
-if [ -e $input ]; then
-    echo "directory $input already exits"
+if [ -e $1 ]; then
+    echo "directory $1 already exits"
 else
-    mkdir $input
-    touch $input/main.cpp
-    cp sample/main.cpp $input/main.cpp
-    cd $input
+    mkdir $1
+    touch $1/main.cpp
+    cp sample/main.cpp $1/main.cpp
+    cd $1
 fi
